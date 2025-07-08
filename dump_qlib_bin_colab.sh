@@ -20,7 +20,8 @@ dolt sql-server &
 # wait for sql server start
 sleep 5s
 
-cd $WORKING_DIR/investment_data
+cd $WORKING_DIR/
+
 mkdir -p ./qlib_dump/qlib_source
 python3 ./qlib_dump/dump_all_to_qlib_source.py
 
