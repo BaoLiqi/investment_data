@@ -1,6 +1,6 @@
 set -e
 set -x
-WORKING_DIR=${1} 
+WORKING_DIR=/content
 QLIB_REPO=${2:-https://github.com/microsoft/qlib.git} 
 
 if ! command -v dolt &> /dev/null
@@ -38,8 +38,3 @@ cp ./qlib_dump/qlib_index/csi* $WORKING_DIR/qlib_bin/instruments/
 
 tar -czvf ./qlib_bin.tar.gz $WORKING_DIR/qlib_bin/
 ls -lh ./qlib_bin.tar.gz
-if [ -d "/output" ]; then
-    mv ./qlib_bin.tar.gz /output/
-else
-    echo "Directory /output does not exist."
-fi

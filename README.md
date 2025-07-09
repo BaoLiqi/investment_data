@@ -52,6 +52,23 @@ docker run
   -it --rm chenditc/investment_data bash dump_qlib_bin.sh && cp ./qlib_bin.tar.gz /output/
 ```
 
+
+```
+
+docker run \
+  -v ./output:/output \
+  -it --rm chenditc/investment_data bash
+
+```
+
+
+
+
+
+
+
+
+
 You can use the following parameter to mount an existing dolt chenditc/investment_data folder to the container.
 ```
   -v /<dolt directory>:/dolt 
