@@ -36,5 +36,6 @@ killall dolt
 
 cp ./qlib_dump/qlib_index/csi* $WORKING_DIR/qlib_bin/instruments/
 
-tar -czvf ./qlib_bin.tar.gz $WORKING_DIR/qlib_bin/
+tar -czvf ./qlib_bin.tar.gz qlib_bin/
+
 ls -lh ./qlib_bin.tar.gz
